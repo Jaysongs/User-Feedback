@@ -1,0 +1,99 @@
+// modal section 
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+.modalBackground {
+    background-color: rgba(0, 0, 0, 0.426);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    }
+.alertBox {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .message {
+        width: 80%;
+        padding: 10px;
+        padding-top: 50px;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 60%;
+
+        .save {
+            cursor: pointer;
+            background-color: #78AD23;
+            border-radius: 50px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .close {
+            cursor: pointer;
+            background-color: #78AD23;
+            border-radius: 50px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .closeBTN {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        color: black;
+        cursor: pointer;
+        padding: 8px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+.loader {
+    font-size: 26px;
+    opacity: 1;
+    animation: fade 2s linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fade  {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+}

@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  height: 50px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav img {
+  width: 100px;
+}
+.nav p {
+  color: white;
+  font-size: 75px;
+  padding: 100px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.modal .modalBackground {
+  background-color: rgba(0, 0, 0, 0.426);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.modal .alertBox {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal .alertBox .message {
+  width: 80%;
+  padding: 10px;
+  padding-top: 50px;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.modal .alertBox .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 60%;
+}
+.modal .alertBox .buttons .save {
+  cursor: pointer;
+  background-color: #78AD23;
+  border-radius: 50px;
+  padding: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.modal .alertBox .buttons .close {
+  cursor: pointer;
+  background-color: #78AD23;
+  border-radius: 50px;
+  padding: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.modal .alertBox .buttons a {
+  text-decoration: none;
+  color: black;
+}
+.modal .alertBox .closeBTN {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  color: black;
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.modal .loader {
+  font-size: 26px;
+  opacity: 1;
+  animation: fade 2s linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+#app .background {
+  width: 65%;
+  height: 100vh;
+  background-color: #77AC23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .background img {
+  width: 500px;
+}
+#app .signin {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signin label,
+.signin input {
+  display: block;
+}
+.signin label {
+  margin-bottom: 10px;
+}
+.signin input {
+  width: 60%;
+  height: 50px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.signin .submit {
+  background-color: #77AC23;
+  width: 30%;
+  color: white;
+}
+.signin img {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.navigation {
+  position: fixed;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+.navigation img {
+  width: 50px;
+}
+.navigation p {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bigHead {
+  position: absolute;
+  height: 100vh;
+  padding: 50px;
+  padding-top: 100px;
+}
+.bigHead .online {
+  font-size: 80px;
+  color: #78AD23;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bigHead .banking {
+  font-size: 100px;
+  color: #627ACF;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bigHead p {
+  width: 300px;
+}
+.bigHead a {
+  text-decoration: none;
+}
+.bigHead .goToLogin {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #78AD23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigHead .goToLogin span {
+  color: white;
+}
+
+.backImg {
+  float: right;
+  width: 80%;
+  height: 100vh;
+  background-image: url(../images/a-lot-of-money-on-investment-on-hand-free-vector.jpg);
+}

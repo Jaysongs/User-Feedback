@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen Financial</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/bank-circle-green-512.webp">
+</head>
+<body>
+    <div class="nav">
+        <p>Evergreen Financial</p>
+        <!-- <a href="#contact" id="contact">CONTACT</a> -->
+
+        <!-- <a href="#" id="open"> open modal</a> -->
+    </div>
+
+
+
+
+    <div id="app">
+        <div class="background">
+            <div class="loader">
+                <img src="images/3916824.webp" alt="logo">
+            </div>
+        </div>
+        <div class="signin">
+            <img src="images/bank-circle-green-512.webp" alt="logo">
+            <h1>Sign In</h1>
+            <label for="fname">Login Name:</label>
+            <input type="text"/>
+            <label for="pw">Password</label>
+            <input type="password"/>
+            <input id="open" class="submit" type="submit" value="SIGN IN">
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modalBackground closeModal"></div>
+        <div class="alertBox">
+            <div class="closeBTN closeModal">X</div>
+            <div class="message">Evergreen Financial's online portal is under routine maintenance. You may experience delays in accessing your accounts or completing transactions. Our team is working diligently to restore full functionality as quickly as possible. For urgent matters, please contact our customer service team by phone or email. Thank you for your understanding and patience. </div>
+            <div class="loader">
+                <p>loading...</p>
+            </div>
+            <div class="buttons">
+                <div class="save">Continue anyway</div>
+                <div class="close closeModal"> <a href="home.html">Go back</a></div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script type="module" src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script></body>
+</html>
