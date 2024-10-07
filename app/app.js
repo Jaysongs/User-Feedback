@@ -15,7 +15,7 @@ function initListeners() {
 
     $("#open").on("click", (e) => {
         console.log("open modal");
-        openModal(`Verifying your cedentials, <br/> this may take a few moments <br/> <p>loading...</p>`, false);
+        openModal(`Verifying your cedentials, <br/> this may take a few moments`, false);
     });
     
 
